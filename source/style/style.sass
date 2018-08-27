@@ -2,7 +2,7 @@
 @import './_header.sass'
 @import './_footer.sass'
 @import './elements/**/*.sass'
-@import './page&page-section/**/*.sass'
+@import './pages/**/*.sass'
 
 .title
 
@@ -13,13 +13,14 @@ h2
 h3
 	&.-md
 
+b, strong
 
 html
 	font: 16px 'RobotoRegular'
 	min-width: 320px
 	width: 100%
 	height: auto
-
+	overflow-x: hidden
 
 body
 	position: relative
@@ -31,3 +32,8 @@ body
 	flex-direction: column
 	line-height: 1
 	margin: 0 auto
+
+.container
+	width: 100%
+	margin-left: auto
+	margin-right: auto
