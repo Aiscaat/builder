@@ -1,7 +1,7 @@
 'use strict';
 
-module.exports = function() {
-  $.gulp.task('sprite:svg', function() {
+module.exports = function () {
+  $.gulp.task('sprite:svg', function () {
     return $.gulp.src('./source/sprite/*.svg')
       .pipe($.gp.svgmin({
         js2svg: {
@@ -11,8 +11,8 @@ module.exports = function() {
       .pipe($.gp.cheerio({
         run: function ($) {
           // $('[fill]').removeAttr('fill');
-          $('[stroke]').removeAttr('stroke');
-          $('[style]').removeAttr('style');
+          // $('[stroke]').removeAttr('stroke');
+          // $('[style]').removeAttr('style');
         },
         parserOptions: { xmlMode: true }
       }))

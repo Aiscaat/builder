@@ -2,8 +2,8 @@
 
 let uglify = require('gulp-uglify-es').default;
 
-module.exports = function() {
-  $.gulp.task('js:foundation', function() {
+module.exports = function () {
+  $.gulp.task('js:foundation', function () {
     return $.gulp.src($.path.jsFoundation)
       .pipe($.gp.concat('foundation.js'))
       .pipe(uglify())
